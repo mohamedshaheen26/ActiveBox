@@ -1,0 +1,185 @@
+@media screen and (max-width: 1440px) {
+  header .heading {
+    padding: 150px 100px;
+  }
+  .section-1 div {
+    width: 26%;
+  }
+  .section-2 .parent {
+    width: 24.80%;
+  }
+  .section-3 {
+    justify-content: center;
+  }
+  .section-3 .teams {
+    width: 24%;
+    margin: 15px;
+  }
+  .teams img {
+    width: 100%;
+  }
+  .section-4 {
+    padding: 0;
+  }
+  .testimonial {
+    align-items: flex-start;
+  }
+  .testimonial div {
+    padding: 20px;
+  }
+  .testimonial p {
+    font-size: 26px;
+  }
+  .section-5 {
+    padding: 100px 200px;
+  }
+  .footer_top div {
+    width: calc(94% / 3);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header nav {
+    align-items: center;
+  }
+  header ul {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999;
+  }
+  header ul li {
+    margin: 10px;
+  }
+  header ul li a {
+    font-size: 25px;
+  }
+  header .menu-icons {
+    display: block;
+  }
+  .section-2 .parent {
+    width: 33%;
+  }
+  .section-3 {
+    flex-wrap: wrap;
+  }
+  .section-3 .teams {
+    margin: 30px;
+    width: 24%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 40px 49px;
+  }
+  header .heading {
+    padding: 100px 0;
+  }
+  header .heading h1 {
+    font-size: 42px;
+  }
+  header .heading p {
+    font-size: 18px;
+  }
+  .section-1 div {
+    width: 100%;
+  }
+  
+  .section-3 {
+    flex-wrap: wrap;
+    padding: 80px 0;
+  }
+  .section-3 .teams {
+    width: 30%;
+    margin: 50px;
+    text-align: center;
+  }
+  .teams .links {
+    padding-top: 30px;
+  }
+  .section-4 {
+    display: block;
+    padding-bottom: 60px;
+  }
+  .section-4 div {
+    width: 100%;
+  }
+  .testimonial p {
+    font-size: 23px;
+  }
+  .section-5 {
+    padding: 100px 50px;
+  }
+  .footer_top {
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_top div {
+    width: 100%;
+    margin: 25px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    padding: 40px 30px;
+  }
+  .section-1 {
+    padding: 100px 30px;
+  }
+  .section-2 .parent {
+    width: 49%;
+  }
+  .section-3 .teams {
+    width: 30%;
+  }
+  .section-5 {
+    padding: 100px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .heading h1 {
+    font-size: 32px;
+  }
+  .section-2 .parent {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1px;
+  }
+  .section-3 .teams {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .navigation img {
+    width: 80%;
+  }
+  header .heading {
+    padding: 60px 3px;
+  }
+  .section-1 {
+    padding: 100px 25px;
+  }
+  .section-3 .teams {
+    width: 100%;
+    margin: 25px;
+  }
+  .testimonial div {
+    padding: 14px;
+  }
+  .footer_bottom {
+    font-size: 12px;
+  }
+}
