@@ -49,14 +49,14 @@ icons.addEventListener("click", () => {
 });
 
 const images = [
-  "style/images/work-1.jpg",
-  "style/images/work-2.jpg",
-  "style/images/work-3.jpg",
-  "style/images/work-4.jpg",
-  "style/images/work-5.jpg",
-  "style/images/work-6.jpg",
-  "style/images/work-7.jpg",
-  "style/images/work-8.jpg",
+  "images/work-1.jpg",
+  "images/work-2.jpg",
+  "images/work-3.jpg",
+  "images/work-4.jpg",
+  "images/work-5.jpg",
+  "images/work-6.jpg",
+  "images/work-7.jpg",
+  "images/work-8.jpg",
 ];
 const Secworks = document.getElementById("section-2");
 
@@ -102,9 +102,37 @@ const Secworks = document.getElementById("section-2");
   }
 })();
 
-
 document.getElementById("close").addEventListener("click", () => {
   cont.style.opacity = "0";
   cont.style.zIndex = "-999";
   document.querySelector("body").style.overflow = "visible";
 });
+
+const testimonials = [
+  {
+    img: "images/testimonial-1.jpg",
+    text: "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...",
+    author: "SUSAN SIMS, INTERACTION DESIGNER AT XYZ",
+  },
+  {
+    img: "images/testimonial-2.jpg",
+    text: "Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur....",
+    author: "Susan Sims, Interaction Designer at XYZ",
+  },
+];
+
+let currentIndex = 0;
+
+function updateTestimonial() {
+  const imgElement = document.getElementById("img-testimonial");
+  const textElement = document.getElementById("testimonial-text");
+  const authorElement = document.getElementById("testimonial-author");
+
+  currentIndex = (currentIndex + 1) % testimonials.length;
+
+  imgElement.src = testimonials[currentIndex].img;
+  textElement.textContent = testimonials[currentIndex].text;
+  authorElement.textContent = testimonials[currentIndex].author;
+}
+
+setInterval(updateTestimonial, 5000);
